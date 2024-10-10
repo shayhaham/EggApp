@@ -14,10 +14,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.util.Log;
+
 public class MainActivity extends AppCompatActivity {
     private Button btnGetOut;
     private int counter;
 
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,5 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
             ;
         });
+        Log.e(TAG, "MainActivity::OnCreate");
     }
 }
